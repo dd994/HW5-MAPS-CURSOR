@@ -33,7 +33,7 @@ public class Main {
             System.out.println("At this day you read:");
             System.out.println(book.get(date));
         } else {
-            System.out.println("You don't take a book in this date");
+            System.out.println("You don't take a book in this date or incorrect date");
         }
 
     }
