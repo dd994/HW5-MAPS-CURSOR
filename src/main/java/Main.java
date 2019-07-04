@@ -9,7 +9,7 @@ import static main.java.accounting.LibraryAccounting.searchByDate;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        
+
         Map<String, String> library = new HashMap<>();
         library.put("2019-07-02", "Valeriy Ananiev - Slidy na dorozi");
         library.put("2019-07-03", "Stephen King - Happiness");
@@ -24,7 +24,8 @@ public class Main {
         System.out.println("If you want to see all dates of your visiting - enter 'y', if you want exit - press any key");
         String yes = scan.nextLine();
         if (yes.equals("y")) {
-            System.out.println(library.keySet());
+            System.out.println("Dates: "+library.keySet());
+            System.out.println("Books: "+library.values());
         } else {
             System.out.println("Have a nice day!");
         }
